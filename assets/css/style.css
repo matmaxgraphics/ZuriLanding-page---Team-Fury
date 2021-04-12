@@ -4,6 +4,9 @@
     --red_color: #E7332B;
     --footer_bg_color: #F9F9FB;
   } 
+  *{
+  font-family: "Averia Libre"
+}
 
   /* END OF RESUABLE */
 
@@ -272,6 +275,18 @@ width: 100%;
 .why_zuri_reasons .box p{
   font-size: 14px;
 }
+.why_zuri a{
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  border: .8px solid #ADADAD;
+  color: #E7332B;
+  text-align: center;
+  width: 160px;
+  margin: auto;
+  margin-top: 50px;
+}
+
 
 /* ENROL SECTION */
   .enrol-now{
