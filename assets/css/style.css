@@ -215,6 +215,63 @@ nav {
 .hero_img img:nth-child(4){
   transform: translateY(-50px);
 }
+/* Why zuri */
+.why_zuri{
+    width: 80%;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+.why_zuri h6{
+  text-align: center;
+  color: #E7332B;
+  font-size: 17px
+}
+.why_zuri h2{
+  text-align: center;
+  font-size: 22px;
+  margin: 50px 0
+}
+.why_zuri_reasons{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+width: 100%;
+  grid-gap: 20px
+}
+.why_zuri_reasons .box:nth-child(1){
+  background-image: url("../images/remote.png");
+}
+.why_zuri_reasons .box:nth-child(2){
+  background-image: url("../images/handson.png");
+}
+.why_zuri_reasons .box:nth-child(3){
+  background-image: url("../images/collab.png");
+}
+.why_zuri_reasons .box:nth-child(4){
+  background-image: url("../images/real.png");
+}
+.why_zuri_reasons .box:nth-child(5){
+  background-image: url("../images/beginner.png");
+}
+.why_zuri_reasons .box:nth-child(6){
+  background-image: url("../images/mentor.png");
+}
+.why_zuri_reasons .box{
+  color: white;
+  display: grid;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.why_zuri_reasons .box img{
+  width: 40px
+}
+.why_zuri_reasons .box h4{
+  font-size: 19px;
+  margin: 20px 0
+}
+.why_zuri_reasons .box p{
+  font-size: 14px;
+}
 
 /* ENROL SECTION */
   .enrol-now{
@@ -316,32 +373,41 @@ nav {
       font-size: 18px;
   }
   @media (max-width: 1200px){
-  .hero{
-    flex-direction: column;
-    text-align: center;
-    width: 90%;
-    margin-bottom: 70px
+    .hero{
+      flex-direction: column;
+      text-align: center;
+      width: 90%;
+      margin-bottom: 70px
+    }
+    .hero .other{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%
+    }
+    .hero h1{
+      font-size: 37px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .hero a, .line{
+      margin: auto;
+    }
+    .hero_img{
+      display: none;
+    }
+    .why_zuri{
+      width: 90%;
+    }
   }
-  .hero .other{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%
-  }
-  .hero h1{
-    font-size: 37px;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .hero a, .line{
-    margin: auto;
-  }
-  .hero_img{
-    display: none;
-  }
-}
 
   @media (max-width: 996px) {
+    .why_zuri_reasons{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      grid-gap: 20px
+    }
 
     .nav_link_holder {
         display: none;
@@ -361,11 +427,20 @@ nav {
       padding-right: 2em;
     }
 
+
     .enrol-now-text{
         padding-top: 1rem;
     }
 
     .training h5{
         font-size: 16px;
+    }
+}
+@media (max-width: 570px) {
+  .why_zuri_reasons{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      grid-gap: 20px
     }
 }
