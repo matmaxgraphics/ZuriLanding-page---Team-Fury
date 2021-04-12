@@ -1,1 +1,300 @@
+/* RESUABLE */
+
+:root {
+    --red_color: #E7332B;
+    --footer_bg_color: #F9F9FB;
+  } 
+
+  /* END OF RESUABLE */
+
+  body {
+    background: #ffffff;
+  }
   
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  button,
+  input {
+    outline: none !important;
+    border: none;
+  }
+
+
+  .section_padding {
+    padding-right: 5em;
+    padding-left: 5em;
+  }
+
+  /* .default_btn {
+    padding: 0.6em 1em;
+    background: var(--blue_color);
+    color: var(--footer_text_color) !important;
+    font-size: 12px;
+    border-radius: 7px;
+    transition: all 0.5s ease-in;
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: var(--header_font) !important;
+  } */
+
+
+  /*--------------------------
+ navigation
+---------------------------*/
+nav {
+    height: 90px;
+    padding: 1em;
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+    z-index: 999999999999;
+    background-color: #fff;
+  }
+  
+  #header.header-scrolled,
+  #header.header-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.5s ease;
+    z-index: 999999999;
+    background-color: #fff;
+    box-shadow: 6px 2px 12px 7px rgba(130, 125, 125, 0.44);
+  }
+  
+  .logo img{
+    float: left;
+    width: 20%;
+  }
+  
+  .nav_link_holder {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    min-width: 40%;
+  }
+  
+  .nav_link_holder a {
+    font-size: 16px;
+    color: var(--text_color1);
+    font-family: var(--header_font);
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .nav-link-btn{
+      border: 1px solid #ADADAD;
+      color: var(--red_color) !important;
+      font-size: 14px !important;
+      padding: 0.4rem 0.9rem;
+      font-weight: bold !important;
+  }
+
+  .btn_holder{
+      margin-top: -0.1rem;
+  }
+
+  nav .active{
+      color:var(--text_color2);
+      font-weight: bold;
+  }
+
+  /* Mobile Nav body classes */
+
+.mobile_nav{
+    width: 0;
+    position: fixed;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.9);
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    overflow-x: hidden;
+    z-index: 99999;
+  }
+  
+  .mobile_nav_content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 2em;
+  }
+  
+  .mobile_nav_content a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .mobile_nav_content a:hover,
+  .mobile_nav_content a:focus{
+    color: #818181;
+  }
+  
+  .mobile_nav .close_btn{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 30px;
+    color: red ! important;
+  }
+  
+  .open_btn{
+    float: right;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    /* margin-top: 12px; */
+    color: var(--text_color1);
+    border:  1px solid #000000;
+    position: relative;
+    padding: 0 0.3em;
+  }
+
+
+  /* END OF MOBILE NAV */
+
+
+/* ENROL SECTION */
+  .enrol-now{
+      background-color: var(--red_color);
+      padding: 4rem 0;
+      color: #ffffff;
+  }
+
+  .enrol-now-text{
+      padding-top: 5rem;
+  }
+
+  .enrol-now a {
+      border: 1px solid white;
+      color: white;
+      background-color: var(--red_color);
+      font-size: 20px;
+      padding: 0.5rem 0.5rem;
+  }
+
+  .enrol-now p{
+      font-weight: normal;
+  }
+
+  /* END OF ENROL SECTION */
+
+
+  /* TRAINING SECTION */
+  .training{
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+  }
+
+  .training h3{
+      color: var(--red_color);
+      font-size: 20px;
+  }
+
+  .training h5{
+      padding-bottom: 0.5rem;
+      font-size: 25px;
+  }
+
+  .training-card{
+    background: #FFFFFF;
+    border: 1px solid #C7C4C4;
+    border-radius: 4px;
+    padding: 2rem 2rem;
+  }
+
+  .training-card span{
+      color: #94BE6A;
+      font-size: 12px;
+      padding-bottom: 1.3rem;
+  }
+
+  .training-card h5{
+      padding-top: 0.7rem;
+      color: #000000;
+      font-weight: 800;
+      font-size: 22px;
+  }
+
+  .training-card p{
+      color: #525252;
+      font-size: 16px;
+      text-align: justify;
+  }
+
+  .training-enrol-btn{
+      background-color: var(--red_color);
+      font-size: 16px;
+      color: #ffffff;
+      border: 1px solid var(--red_color);
+      padding: 0.5rem 0.7rem;
+  }
+
+  /* END OF TRAINING SECTION */
+
+
+
+
+  /* FOOTER STYLING */
+
+  footer{
+      background-color: var(--footer_bg_color);
+      font-weight: normal;
+      font-size: 18px;
+      padding: 3rem 0;
+  }
+  /* .footer-details{
+      display: flex;
+      justify-content: space-around;
+  } */
+
+  .footer-links a i{
+      color: #1B0403;
+      margin-right: 1.5rem;
+      font-size: 18px;
+  }
+
+  @media (max-width: 996px) {
+
+    .nav_link_holder {
+        display: none;
+      }
+    
+      .open_btn {
+        display: block;
+      }
+  
+      .logo img{
+        float: left;
+        width: 60%;
+      }
+
+    .section_padding {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+
+    .enrol-now-text{
+        padding-top: 1rem;
+    }
+
+    .training h5{
+        font-size: 16px;
+    }
+}
